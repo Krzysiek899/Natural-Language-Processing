@@ -1,0 +1,19 @@
+{
+    "cat": {
+        "singular": "cat",
+        "plural": "cats"
+    },
+    "dog": {
+        "singular": "dog",
+        "plural": "dogs"
+    },
+    "child": {
+        "singular": "child",
+        "plural": "children"
+    },
+    "fish": {
+        "singular": "fish",
+      "plural": "fishes"
+    }
+
+}

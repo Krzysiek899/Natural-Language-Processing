@@ -1,0 +1,30 @@
+{
+    "go": {
+        "base": "go",
+        "s_form": "goes",
+        "past": "went",
+        "past_participle": "gone",
+        "ing_form" : "going"
+    },
+    "do": {
+        "base": "do",
+        "s_form": "does",
+        "past": "did",
+        "past_participle" : "done",
+        "ing_form" : "doing"
+    },
+    "have": {
+        "base": "have",
+        "s_form": "has",
+        "past": "had",
+        "past_participle": "had",
+        "ing_form" : "having"
+    },
+    "eat": {
+        "base": "eat",
+        "s_form": "eats",
+        "past": "ate",
+        "past_participle" : "eaten",
+        "ing_form" : "eating"
+    }
+}

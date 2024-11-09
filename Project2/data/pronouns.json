@@ -1,0 +1,38 @@
+{
+        "I": {
+            "subject": "I",
+            "object": "me",
+            "possessive_adjective": "my"
+        },
+        "you": {
+            "subject": "you",
+            "object": "you",
+            "possessive_adjective": "your"
+        },
+        "he": {
+            "subject": "he",
+            "object": "him",
+            "possessive_adjective": "his"
+        },
+        "she": {
+            "subject": "she",
+            "object": "her",
+            "possessive_adjective": "her"
+        },
+        "it": {
+            "subject": "it",
+            "object": "it",
+            "possessive_adjective": "its"
+        },
+        "we": {
+            "subject": "we",
+            "object": "us",
+            "possessive_adjective": "our"
+        },
+        "they": {
+            "subject": "they",
+            "object": "them",
+            "possessive_adjective": "their"
+        }
+
+}
