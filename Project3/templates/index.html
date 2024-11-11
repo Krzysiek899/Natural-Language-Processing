@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyszukiwarka Rzeczowników</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Wyszukiwarka Rzeczowników</h1>
+        <div class="input-area">
+            <input type="text" id="verb1" placeholder="Czasownik 1">
+            <input type="text" id="verb2" placeholder="Czasownik 2">
+            <button id="search-button">Szukaj</button>
+        </div>
+
+        <div class="results">
+            <h2>Suma rzeczowników:</h2>
+            <div id="result-union"></div>
+            <h2>Część wspólna:</h2>
+            <div id="result-intersection"></div>
+        </div>
+    </div>
+
+    <script>
+    $(document).ready(function() {
+        $('#search-button').click(function() {
+            const verb1 = $('#verb1').val();
+            const verb2 = $('#verb2').val();
+
+            $.post('/search', { verb1: verb1, verb2: verb2 }, function(data) {
+                $('#result-union').html(data.union.join(', ') || 'Brak wyników');
+                $('#result-intersection').html(data.intersection.join(', ') || 'Brak wyników');
+            });
+        });
+    });
+</script>
+</body>
+</html>
