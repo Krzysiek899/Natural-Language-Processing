@@ -20,11 +20,299 @@
         "past_participle": "had",
         "ing_form" : "having"
     },
+    "jump": {
+        "base": "jump",
+        "s_form": "jumps",
+        "past": "jumped",
+        "past_participle": "jumped",
+        "ing_form": "jumping"
+    },
+    "swim": {
+        "base": "swim",
+        "s_form": "swims",
+        "past": "swam",
+        "past_participle": "swum",
+        "ing_form": "swimming"
+    },
+    "fly": {
+        "base": "fly",
+        "s_form": "flies",
+        "past": "flew",
+        "past_participle": "flown",
+        "ing_form": "flying"
+    },
+    "walk": {
+        "base": "walk",
+        "s_form": "walks",
+        "past": "walked",
+        "past_participle": "walked",
+        "ing_form": "walking"
+    },
+    "climb": {
+        "base": "climb",
+        "s_form": "climbs",
+        "past": "climbed",
+        "past_participle": "climbed",
+        "ing_form": "climbing"
+    },
+    "see": {
+        "base": "see",
+        "s_form": "sees",
+        "past": "saw",
+        "past_participle": "seen",
+        "ing_form": "seeing"
+    },
+    "talk": {
+        "base": "talk",
+        "s_form": "talks",
+        "past": "talked",
+        "past_participle": "talked",
+        "ing_form": "talking"
+    },
+    "play": {
+        "base": "play",
+        "s_form": "plays",
+        "past": "played",
+        "past_participle": "played",
+        "ing_form": "playing"
+    },
+    "work": {
+        "base": "work",
+        "s_form": "works",
+        "past": "worked",
+        "past_participle": "worked",
+        "ing_form": "working"
+    },
     "eat": {
         "base": "eat",
         "s_form": "eats",
         "past": "ate",
-        "past_participle" : "eaten",
-        "ing_form" : "eating"
+        "past_participle": "eaten",
+        "ing_form": "eating"
+    },
+    "drink": {
+        "base": "drink",
+        "s_form": "drinks",
+        "past": "drank",
+        "past_participle": "drunk",
+        "ing_form": "drinking"
+    },
+    "drive": {
+        "base": "drive",
+        "s_form": "drives",
+        "past": "drove",
+        "past_participle": "driven",
+        "ing_form": "driving"
+    },
+    "read": {
+        "base": "read",
+        "s_form": "reads",
+        "past": "read",
+        "past_participle": "read",
+        "ing_form": "reading"
+    },
+    "write": {
+        "base": "write",
+        "s_form": "writes",
+        "past": "wrote",
+        "past_participle": "written",
+        "ing_form": "writing"
+    },
+    "sing": {
+        "base": "sing",
+        "s_form": "sings",
+        "past": "sang",
+        "past_participle": "sung",
+        "ing_form": "singing"
+    },
+    "dance": {
+        "base": "dance",
+        "s_form": "dances",
+        "past": "danced",
+        "past_participle": "danced",
+        "ing_form": "dancing"
+    },
+    "watch": {
+        "base": "watch",
+        "s_form": "watches",
+        "past": "watched",
+        "past_participle": "watched",
+        "ing_form": "watching"
+    },
+    "build": {
+        "base": "build",
+        "s_form": "builds",
+        "past": "built",
+        "past_participle": "built",
+        "ing_form": "building"
+    },
+    "create": {
+        "base": "create",
+        "s_form": "creates",
+        "past": "created",
+        "past_participle": "created",
+        "ing_form": "creating"
+    },
+    "give": {
+        "base": "give",
+        "s_form": "gives",
+        "past": "gave",
+        "past_participle": "given",
+        "ing_form": "giving"
+    },
+    "take": {
+        "base": "take",
+        "s_form": "takes",
+        "past": "took",
+        "past_participle": "taken",
+        "ing_form": "taking"
+    },
+    "meet": {
+        "base": "meet",
+        "s_form": "meets",
+        "past": "met",
+        "past_participle": "met",
+        "ing_form": "meeting"
+    },
+    "call": {
+        "base": "call",
+        "s_form": "calls",
+        "past": "called",
+        "past_participle": "called",
+        "ing_form": "calling"
+    },
+    "send": {
+        "base": "send",
+        "s_form": "sends",
+        "past": "sent",
+        "past_participle": "sent",
+        "ing_form": "sending"
+    },
+    "ask": {
+        "base": "ask",
+        "s_form": "asks",
+        "past": "asked",
+        "past_participle": "asked",
+        "ing_form": "asking"
+    },
+    "tell": {
+        "base": "tell",
+        "s_form": "tells",
+        "past": "told",
+        "past_participle": "told",
+        "ing_form": "telling"
+    },
+    "find": {
+        "base": "find",
+        "s_form": "finds",
+        "past": "found",
+        "past_participle": "found",
+        "ing_form": "finding"
+    },
+    "lose": {
+        "base": "lose",
+        "s_form": "loses",
+        "past": "lost",
+        "past_participle": "lost",
+        "ing_form": "losing"
+    },
+    "speak": {
+        "base": "speak",
+        "s_form": "speaks",
+        "past": "spoke",
+        "past_participle": "spoken",
+        "ing_form": "speaking"
+    },
+    "teach": {
+        "base": "teach",
+        "s_form": "teaches",
+        "past": "taught",
+        "past_participle": "taught",
+        "ing_form": "teaching"
+    },
+    "show": {
+        "base": "show",
+        "s_form": "shows",
+        "past": "showed",
+        "past_participle": "shown",
+        "ing_form": "showing"
+    },
+    "laugh": {
+        "base": "laugh",
+        "s_form": "laughs",
+        "past": "laughed",
+        "past_participle": "laughed",
+        "ing_form": "laughing"
+    },
+    "cry": {
+        "base": "cry",
+        "s_form": "cries",
+        "past": "cried",
+        "past_participle": "cried",
+        "ing_form": "crying"
+    },
+    "study": {
+        "base": "study",
+        "s_form": "studies",
+        "past": "studied",
+        "past_participle": "studied",
+        "ing_form": "studying"
+    },
+    "learn": {
+        "base": "learn",
+        "s_form": "learns",
+        "past": "learned",
+        "past_participle": "learned",
+        "ing_form": "learning"
+    },
+    "help": {
+        "base": "help",
+        "s_form": "helps",
+        "past": "helped",
+        "past_participle": "helped",
+        "ing_form": "helping"
+    },
+    "run": {
+        "base": "run",
+        "s_form": "runs",
+        "past": "ran",
+        "past_participle": "run",
+        "ing_form": "running"
+    },
+    "grow": {
+        "base": "grow",
+        "s_form": "grows",
+        "past": "grew",
+        "past_participle": "grown",
+        "ing_form": "growing"
+    },
+    "hear": {
+        "base": "hear",
+        "s_form": "hears",
+        "past": "heard",
+        "past_participle": "heard",
+        "ing_form": "hearing"
+    },
+    "like": {
+        "base": "like",
+        "s_form": "likes",
+        "past": "liked",
+        "past_participle": "liked",
+        "ing_form": "liking"
+    },
+    "love": {
+        "base": "love",
+        "s_form": "loves",
+        "past": "loved",
+        "past_participle": "loved",
+        "ing_form": "loving"
+    },
+    "say": {
+        "base": "say",
+        "s_form": "says",
+        "past": "said",
+        "past_participle": "said",
+        "ing_form": "saying"
     }
+
 }

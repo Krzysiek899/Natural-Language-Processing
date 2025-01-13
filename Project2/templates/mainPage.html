@@ -2,9 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SVO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVO Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" defer></script>
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
 </head>
 <body>
-<h1><i> Welcome to the main page!</i></h1>
+    <header class="p-3 bg-dark text-white text-center">
+        <h1>SVO Generator</h1>
+    </header>
+
+    <!-- Modal container -->
+    <div id="responseModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Generated Sentence</h2>
+        <p id="sentenceContent"></p>
+      </div>
+    </div>
+
+
+    <main class="container-fluid py-4">
+        <form>
+            <!-- Subject Section -->
+            <section class="mb-4">
+                <h2 class="mb-3">Subject</h2>
+                <div class="row align-items-center mb-3">
+                    <div class="col-lg-8">
+                        <label for="subjectSelect" class="form-label">Subject:</label>
+                        <select id="subjectSelect" class="form-select">
+                            <!-- Options -->
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="toggle-switch">
+                            <input type="radio" id="subjectNoun" name="subject" value="noun" checked>
+                            <label for="subjectNoun">Noun</label>
+
+                            <input type="radio" id="subjectPronoun" name="subject" value="pronoun">
+                            <label for="subjectPronoun">Pronoun</label>
+
+                            <div class="switch-indicator"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="subjectPluralCheck">
+                            <label class="form-check-label" for="subjectPluralCheck">Plural</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="subjectPossessiveSelect" class="form-label">Possessive:</label>
+                        <select id="subjectPossessiveSelect" class="form-select">
+                            <!-- Options -->
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="subjectAdjectiveSelect" class="form-label">Adjective:</label>
+                        <select id="subjectAdjectiveSelect" class="form-select">
+                            <!-- Options -->
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Verb Section -->
+            <section class="mb-4">
+                <h2 class="mb-3">Verb</h2>
+                <div class="row align-items-center mb-3">
+                    <div class="col-lg-6">
+                        <label for="verbSelect" class="form-label">Verb:</label>
+                        <select id="verbSelect" class="form-select">
+                            <!-- Options -->
+                        </select>
+                    </div>
+                    <div class="col-lg-5">
+                        <label for="tenseSelect" class="form-label">Tense:</label>
+                        <select id="tenseSelect" class="form-select">
+                            <!-- Options -->
+                        </select>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="negativeCheck">
+                            <label class="form-check-label" for="negativeCheck">Negative</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Object Section -->
+            <section class="mb-4">
+                <h2 class="mb-3">Object</h2>
+                <div class="row align-items-center mb-3">
+                    <div class="col-lg-8">
+                        <label for="objectSelect" class="form-label">Object:</label>
+                        <select id="objectSelect" class="form-select">
+                            <!-- Options -->
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="toggle-switch">
+                            <input type="radio" id="objectNoun" name="object" value="noun" checked>
+                            <label for="objectNoun">Noun</label>
+
+                            <input type="radio" id="objectPronoun" name="object" value="pronoun">
+                            <label for="objectPronoun">Pronoun</label>
+
+                            <div class="switch-indicator"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="objectPluralCheck">
+                            <label class="form-check-label" for="objectPluralCheck">Plural</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="objectPossessiveSelect" class="form-label">Possessive:</label>
+                        <select id="objectPossessiveSelect" class="form-select">
+                            <!-- Options -->
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="objectAdjectiveSelect" class="form-label">Adjective:</label>
+                        <select id="objectAdjectiveSelect" class="form-select">
+                            <!-- Options -->
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Generate Button -->
+            <div class="text-center">
+                <button id="generateButton" type="button" class="btn btn-primary btn-lg">Generate</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

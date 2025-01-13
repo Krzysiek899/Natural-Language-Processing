@@ -1,19 +1,518 @@
 {
-    "cat": {
-        "singular": "cat",
-        "plural": "cats"
+    "apple": {
+        "singular": "apple",
+        "plural": "apples"
     },
     "dog": {
         "singular": "dog",
         "plural": "dogs"
     },
-    "child": {
-        "singular": "child",
-        "plural": "children"
+    "car": {
+        "singular": "car",
+        "plural": "cars"
     },
-    "fish": {
-        "singular": "fish",
-      "plural": "fishes"
+    "house": {
+        "singular": "house",
+        "plural": "houses"
+    },
+    "book": {
+        "singular": "book",
+        "plural": "books"
+    },
+    "computer": {
+        "singular": "computer",
+        "plural": "computers"
+    },
+    "phone": {
+        "singular": "phone",
+        "plural": "phones"
+    },
+    "tree": {
+        "singular": "tree",
+        "plural": "trees"
+    },
+    "city": {
+        "singular": "city",
+        "plural": "cities"
+    },
+    "ocean": {
+        "singular": "ocean",
+        "plural": "oceans"
+    },
+    "food": {
+        "singular": "food",
+        "plural": "foods"
+    },
+    "music": {
+        "singular": "music",
+        "plural": "musics"
+    },
+    "movie": {
+        "singular": "movie",
+        "plural": "movies"
+    },
+    "friend": {
+        "singular": "friend",
+        "plural": "friends"
+    },
+    "school": {
+        "singular": "school",
+        "plural": "schools"
+    },
+    "game": {
+        "singular": "game",
+        "plural": "games"
+    },
+    "bike": {
+        "singular": "bike",
+        "plural": "bikes"
+    },
+    "cat": {
+        "singular": "cat",
+        "plural": "cats"
+    },
+    "bird": {
+        "singular": "bird",
+        "plural": "birds"
+    },
+    "flower": {
+        "singular": "flower",
+        "plural": "flowers"
+    },
+    "table": {
+        "singular": "table",
+        "plural": "tables"
+    },
+    "chair": {
+        "singular": "chair",
+        "plural": "chairs"
+    },
+    "shirt": {
+        "singular": "shirt",
+        "plural": "shirts"
+    },
+    "mountain": {
+        "singular": "mountain",
+        "plural": "mountains"
+    },
+    "river": {
+        "singular": "river",
+        "plural": "rivers"
+    },
+    "star": {
+        "singular": "star",
+        "plural": "stars"
+    },
+    "love": {
+        "singular": "love",
+        "plural": "loves"
+    },
+    "work": {
+        "singular": "work",
+        "plural": "works"
+    },
+    "art": {
+        "singular": "art",
+        "plural": "arts"
+    },
+    "light": {
+        "singular": "light",
+        "plural": "lights"
+    },
+    "day": {
+        "singular": "day",
+        "plural": "days"
+    },
+    "night": {
+        "singular": "night",
+        "plural": "nights"
+    },
+    "family": {
+        "singular": "family",
+        "plural": "families"
+    },
+    "beach": {
+        "singular": "beach",
+        "plural": "beaches"
+    },
+    "coffee": {
+        "singular": "coffee",
+        "plural": "coffees"
+    },
+    "tea": {
+        "singular": "tea",
+        "plural": "teas"
+    },
+    "ice": {
+        "singular": "ice",
+        "plural": "ices"
+    },
+    "sun": {
+        "singular": "sun",
+        "plural": "suns"
+    },
+    "moon": {
+        "singular": "moon",
+        "plural": "moons"
+    },
+    "heart": {
+        "singular": "heart",
+        "plural": "hearts"
+    },
+    "clock": {
+        "singular": "clock",
+        "plural": "clocks"
+    },
+    "building": {
+        "singular": "building",
+        "plural": "buildings"
+    },
+    "land": {
+        "singular": "land",
+        "plural": "lands"
+    },
+    "travel": {
+        "singular": "travel",
+        "plural": "travels"
+    },
+    "party": {
+        "singular": "party",
+        "plural": "parties"
+    },
+    "note": {
+        "singular": "note",
+        "plural": "notes"
+    },
+    "message": {
+        "singular": "message",
+        "plural": "messages"
+    },
+    "dream": {
+        "singular": "dream",
+        "plural": "dreams"
+    },
+    "journey": {
+        "singular": "journey",
+        "plural": "journeys"
+    },
+    "adventure": {
+        "singular": "adventure",
+        "plural": "adventures"
+    },
+    "memory": {
+        "singular": "memory",
+        "plural": "memories"
+    },
+    "sport": {
+        "singular": "sport",
+        "plural": "sports"
+    },
+    "dance": {
+        "singular": "dance",
+        "plural": "dances"
+    },
+    "play": {
+        "singular": "play",
+        "plural": "plays"
+    },
+    "festival": {
+        "singular": "festival",
+        "plural": "festivals"
+    },
+    "culture": {
+        "singular": "culture",
+        "plural": "cultures"
+    },
+    "history": {
+        "singular": "history",
+        "plural": "histories"
+    },
+    "science": {
+        "singular": "science",
+        "plural": "sciences"
+    },
+    "nature": {
+        "singular": "nature",
+        "plural": "natures"
+    },
+    "technology": {
+        "singular": "technology",
+        "plural": "technologies"
+    },
+    "fashion": {
+        "singular": "fashion",
+        "plural": "fashions"
+    },
+    "health": {
+        "singular": "health",
+        "plural": "healths"
+    },
+    "beauty": {
+        "singular": "beauty",
+        "plural": "beauties"
+    },
+    "gift": {
+        "singular": "gift",
+        "plural": "gifts"
+    },
+    "hobby": {
+        "singular": "hobby",
+        "plural": "hobbies"
+    },
+    "challenge": {
+        "singular": "challenge",
+        "plural": "challenges"
+    },
+    "solution": {
+        "singular": "solution",
+        "plural": "solutions"
+    },
+    "joy": {
+        "singular": "joy",
+        "plural": "joys"
+    },
+    "peace": {
+        "singular": "peace",
+        "plural": "peaces"
+    },
+    "strength": {
+        "singular": "strength",
+        "plural": "strengths"
+    },
+    "wisdom": {
+        "singular": "wisdom",
+        "plural": "wisdoms"
+    },
+    "freedom": {
+        "singular": "freedom",
+        "plural": "freedoms"
+    },
+    "happiness": {
+        "singular": "happiness",
+        "plural": "happinesses"
+    },
+    "success": {
+        "singular": "success",
+        "plural": "successes"
+    },
+    "team": {
+        "singular": "team",
+        "plural": "teams"
+    },
+    "leader": {
+        "singular": "leader",
+        "plural": "leaders"
+    },
+    "partner": {
+        "singular": "partner",
+        "plural": "partners"
+    },
+    "strategy": {
+        "singular": "strategy",
+        "plural": "strategies"
+    },
+    "idea": {
+        "singular": "idea",
+        "plural": "ideas"
+    },
+    "goal": {
+        "singular": "goal",
+        "plural": "goals"
+    },
+    "talent": {
+        "singular": "talent",
+        "plural": "talents"
+    },
+    "skill": {
+        "singular": "skill",
+        "plural": "skills"
+    },
+    "chance": {
+        "singular": "chance",
+        "plural": "chances"
+    },
+    "risk": {
+        "singular": "risk",
+        "plural": "risks"
+    },
+    "change": {
+        "singular": "change",
+        "plural": "changes"
+    },
+    "victory": {
+        "singular": "victory",
+        "plural": "victories"
+    },
+    "loss": {
+        "singular": "loss",
+        "plural": "losses"
+    },
+    "experience": {
+        "singular": "experience",
+        "plural": "experiences"
+    },
+    "insight": {
+        "singular": "insight",
+        "plural": "insights"
+    },
+    "future": {
+        "singular": "future",
+        "plural": "futures"
+    },
+    "past": {
+        "singular": "past",
+        "plural": "pasts"
+    },
+    "present": {
+        "singular": "present",
+        "plural": "presents"
+    },
+    "story": {
+        "singular": "story",
+        "plural": "stories"
+    },
+    "secret": {
+        "singular": "secret",
+        "plural": "secrets"
+    },
+    "wish": {
+        "singular": "wish",
+        "plural": "wishes"
+    },
+    "hope": {
+        "singular": "hope",
+        "plural": "hopes"
+    },
+    "passion": {
+        "singular": "passion",
+        "plural": "passions"
+    },
+    "human": {
+        "singular" : "human",
+        "plural" : "humans"
+    },
+    "man": {
+        "singular" : "man",
+        "plural" : "men"
+    },
+    "woman": {
+        "singular" : "woman",
+        "plural" : "women"
+    },
+    "person": {
+        "singular" : "person",
+        "plural" : "people"
+    },
+    "teacher": {
+        "singular": "teacher",
+        "plural": "teachers"
+    },
+    "doctor": {
+        "singular": "doctor",
+        "plural": "doctors"
+    },
+    "student": {
+        "singular": "student",
+        "plural": "students"
+    },
+    "artist": {
+        "singular": "artist",
+        "plural": "artists"
+    },
+    "scientist": {
+        "singular": "scientist",
+        "plural": "scientists"
+    },
+    "chef": {
+        "singular": "chef",
+        "plural": "chefs"
+    },
+    "lawyer": {
+        "singular": "lawyer",
+        "plural": "lawyers"
+    },
+    "musician": {
+        "singular": "musician",
+        "plural": "musicians"
+    },
+    "athlete": {
+        "singular": "athlete",
+        "plural": "athletes"
+    },
+    "writer": {
+        "singular": "writer",
+        "plural": "writers"
+    },
+    "parent": {
+        "singular": "parent",
+        "plural": "parents"
+    },
+    "soldier": {
+        "singular": "soldier",
+        "plural": "soldiers"
+    },
+    "mentor": {
+        "singular": "mentor",
+        "plural": "mentors"
+    },
+    "volunteer": {
+        "singular": "volunteer",
+        "plural": "volunteers"
+    },
+    "developer": {
+        "singular": "developer",
+        "plural": "developers"
+    },
+    "politician": {
+        "singular": "politician",
+        "plural": "politicians"
+    },
+    "neighbor": {
+        "singular": "neighbor",
+        "plural": "neighbors"
+    },
+    "actor": {
+        "singular": "actor",
+        "plural": "actors"
+    },
+    "lion": {
+        "singular": "lion",
+        "plural": "lions"
+    },
+    "elephant": {
+        "singular": "elephant",
+        "plural": "elephants"
+    },
+    "dolphin": {
+        "singular": "dolphin",
+        "plural": "dolphins"
+    },
+    "eagle": {
+        "singular": "eagle",
+        "plural": "eagles"
+    },
+    "giraffe": {
+        "singular": "giraffe",
+        "plural": "giraffes"
+    },
+    "kangaroo": {
+        "singular": "kangaroo",
+        "plural": "kangaroos"
+    },
+    "wolf": {
+        "singular": "wolf",
+        "plural": "wolves"
+    },
+    "penguin": {
+        "singular": "penguin",
+        "plural": "penguins"
+    },
+    "turtle": {
+        "singular": "turtle",
+        "plural": "turtles"
+    },
+    "fox": {
+        "singular": "fox",
+        "plural": "foxes"
     }
-
 }

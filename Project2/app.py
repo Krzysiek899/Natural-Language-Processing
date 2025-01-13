@@ -1,5 +1,7 @@
 import json
-from flask import Flask, render_template, jsonify
+from crypt import methods
+
+from flask import Flask, render_template, jsonify, request
 
 app = Flask(__name__)
 
@@ -15,10 +17,13 @@ with open('data/adjectives.json', 'r') as adjectives_file:
 with open('data/pronouns.json', 'r') as pronouns_file:
     pronouns = json.load(pronouns_file)
 
-sentence_params = {"subject" : "cat", 'is_subject_plural' : False, "is_subject_pronoun" : False, "subject_adjective" : "sweet",
-                   "subject_possessive" : "I", "verb" : "eat", "tense" : "past_simple", "is_negative": True,
-                   "object" : "fish", "is_object_plural" : True,"is_object_pronoun" : False, "object_adjective" : "good",
-                   "object_possessive" : "you",}
+with open('data/tenses.json', 'r') as tenses_file:
+    tenses = json.load(tenses_file)
+
+# sentence_params = {"subject" : "cat", 'is_subject_plural' : False, "is_subject_pronoun" : False, "subject_adjective" : "sweet",
+#                    "subject_possessive" : "I", "verb" : "eat", "tense" : "past_simple", "is_negative": True,
+#                    "object" : "fish", "is_object_plural" : True,"is_object_pronoun" : False, "object_adjective" : "good",
+#                    "object_possessive" : "you",}
 
 def get_correct_be_form(subject, is_plural, tense):
     if tense == "present":
@@ -106,7 +111,7 @@ def generate_sentence(sentence_params):
     elif tense == "past_perfect":
         verb_part = "had " + negative + verbs[verb]["past_participle"]
     elif tense == "past_perfect_continuous":
-        verb_part = "had" + negative + " been" + verbs[verb]["ing_form"]
+        verb_part = "had" + negative + " been " + verbs[verb]["ing_form"]
     elif tense == "future_simple":
         verb_part = "will " + negative + verbs[verb]["base"]
     elif tense == "going_to":
@@ -126,7 +131,7 @@ def generate_sentence(sentence_params):
 
     return sentence
 
-print(generate_sentence(sentence_params))
+#print(generate_sentence(sentence_params))
 
 @app.route('/get_verbs', methods=['GET'])
 def get_verbs():
@@ -138,14 +143,23 @@ def get_nouns():
 
 @app.route('/get_adjectives', methods=['GET'])
 def get_adjectives():
-    return jsonify(adjectives.keys())
+    return jsonify(adjectives)
 
 @app.route('/get_pronouns', methods=['GET'])
 def get_pronouns():
     return jsonify(list(pronouns.keys()))
 
+@app.route('/get_tenses', methods=['GET'])
+def get_tenses():
+    return jsonify(tenses)
+
+@app.route('/generate', methods=['POST'])
+def generate():
+    data = request.get_json()
+    generated_sentence = generate_sentence(data)
+    return jsonify({'sentence': generated_sentence})
 @app.route('/')
-def mainPage():  # put application's code here
+def main_page():  # put application's code here
     return render_template("mainPage.html")
 
 
